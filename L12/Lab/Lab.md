@@ -1,28 +1,28 @@
-# Task: Todo List – Svelte Version
+# Zadanie: Lista Zadań – Wersja Svelte
 
-Your task is to prepare a todo list application based on the instructions from [Assignment 7](../../W07/Lab/LabEn.md), this time using **Svelte**. You may copy the styles and HTML from that assignment.
+Twoim zadaniem jest przygotowanie aplikacji listy zadań (todo list) na podstawie instrukcji z [Zadania 7](../../W07/Lab/Lab.md), tym razem przy użyciu **Svelte**. Możesz skopiować style i HTML z tamtego zadania.
 
-The list should be built using **Svelte and TypeScript**. All functions must include appropriate type annotations – avoid using the `any` type.
+Lista powinna być zbudowana przy użyciu **Svelte i TypeScript**. Wszystkie funkcje muszą zawierać odpowiednie adnotacje typów – unikaj używania typu `any`.
 
-Use [Vite](https://vite.dev/) to create the application.
+Użyj [Vite](https://vite.dev/) do utworzenia aplikacji.
 
-### Resources
+### Zasoby
 
-In addition to the [documentation](https://svelte.dev/docs/svelte/overview), it’s worth reviewing the [tutorial](https://svelte.dev/tutorial/svelte/welcome-to-svelte).
+Oprócz [dokumentacji](https://svelte.dev/docs/svelte/overview), warto zapoznać się z [samouczkiem](https://svelte.dev/tutorial/svelte/welcome-to-svelte).
 
-### Requirements:
+### Wymagania:
 
-1. You must preserve all functionalities from the List 7 todo list:
-   - adding items,
-   - deleting items,
-   - changing order,
-   - marking/unmarking items as completed,
-   - clearing the entire list.
-1. You must use Svelte’s native features. In particular, **direct DOM manipulation is forbidden** (e.g., using `document.getElement...`).
-1. The list of TODO items, along with all functions for modifying it, must be stored in a separate file.
-1. The list should be broken into components. The breakdown is mostly up to you, but the following components are **mandatory**:
-   - A component rendering the list of tasks (the part originally in the `main` element),
-   - A component rendering the form for adding new tasks (the part from the `form` element),
-   - A component rendering the list header (the `header` element with class `todos-header__container`),
-   - A component rendering a single list item (the `li` element).
-1. Maintain a clean folder structure: it can be organized however you prefer, but make sure it is clear and potentially easy to extend.
+1. Musisz zachować wszystkie funkcjonalności z listy zadań z Zadania 7:
+   - dodawanie elementów,
+   - usuwanie elementów,
+   - zmiana kolejności,
+   - oznaczanie/odznaczanie jako ukończone,
+   - czyszczenie całej listy.
+1. Musisz używać natywnych funkcji Svelte. W szczególności **zakazana jest bezpośrednia manipulacja DOM** (np. użycie `document.getElement...`).
+1. Lista elementów TODO wraz ze wszystkimi funkcjami modyfikującymi ją musi znajdować się w osobnym pliku.
+1. Lista powinna być podzielona na komponenty. Podział zależy głównie od Ciebie, ale następujące komponenty są **obowiązkowe**:
+   - Komponent renderujący listę zadań (część pierwotnie w elemencie `main`),
+   - Komponent renderujący formularz dodawania nowych zadań (część z elementu `form`),
+   - Komponent renderujący nagłówek listy (element `header` z klasą `todos-header__container`),
+   - Komponent renderujący pojedynczy element listy (element `li`).
+1. Utrzymuj przejrzystą strukturę folderów: możesz ją zorganizować według własnego uznania, ale upewnij się, że jest czytelna i potencjalnie łatwa do rozbudowy.
