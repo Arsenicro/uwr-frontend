@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import { calculate } from "./calculate";
 
-interface ShoppingItem {
+export interface ShoppingItem {
   id: string;
   dateAdded: Date;
   name: string;
@@ -44,12 +44,15 @@ export function shoppingListReducer(
     case "REMOVE_ITEM":
       return state.filter((item) => item.id !== action.payload);
     case "ADD_ITEM":
-      const newItem = {
-        ...action.payload,
-        id: nanoid(),
-        dateAdded: new Date(),
-      };
-      return [...state, newItem];
+      console.log(new Date());
+      return [
+        ...state,
+        {
+          ...action.payload,
+          id: nanoid(),
+          dateAdded: new Date(),
+        },
+      ];
     case "UPDATE_QUANTITY":
       return state.map((item) =>
         item.id === action.payload.id

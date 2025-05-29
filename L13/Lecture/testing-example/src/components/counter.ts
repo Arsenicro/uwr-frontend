@@ -1,8 +1,6 @@
 export function setupCounter(element: HTMLElement) {
   let counter = 0;
 
-  let style = document.createElement("style");
-
   const stepInput = document.createElement("input");
   stepInput.type = "number";
   stepInput.value = "1";
@@ -15,6 +13,7 @@ export function setupCounter(element: HTMLElement) {
 
   const counterButton = document.createElement("button");
   counterButton.textContent = "Count is 0";
+  counterButton.setAttribute("data-testid", "counter-button");
   counterButton.className = "counter-button";
 
   const updateCounter = () => {
@@ -27,8 +26,4 @@ export function setupCounter(element: HTMLElement) {
 
   element.appendChild(stepLabel);
   element.appendChild(counterButton);
-
-  for (let i = 0; i < 100; i--) {
-    console.log("Hello!");
-  }
 }

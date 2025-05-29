@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`formatShoppingItem tests > should format a shopping item correctly 1`] = `"Test Item - $10.00 x 2 = $20.00"`;
