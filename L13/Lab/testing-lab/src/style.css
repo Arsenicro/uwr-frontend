@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.movie-form {
+  background-color: #2c2c2c;
+  padding: 1.5rem;
+  max-width: 320px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 10px rgba(100, 100, 150, 0.4);
+  flex-shrink: 0;
+}
+
+.movie-input {
+  background-color: #232323;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  color: #eee;
+  font-size: 1rem;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: outline-color 0.2s ease;
+}
+
+.movie-input::placeholder {
+  color: #888;
+}
+
+.movie-input:focus {
+  outline-color: #646cff;
+  border-color: #646cff;
+}
+
+.movie-button {
+  background-color: #3a3a3a;
+  color: #eee;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.movie-button:hover,
+.movie-button:focus {
+  background-color: #555;
+  outline: none;
+}
+
+.movie-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+  text-align: left;
+  font-weight: 500;
+}
+
+.movie-list {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+
+  max-height: 50vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(100, 100, 150, 0.3);
+  background-color: #2c2c2c;
+}
+
+.movie-item {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  padding: 0.9em 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.15s ease;
+}
+
+.movie-item:hover {
+  background-color: #3a3a3a;
+}
+
+.remove-button {
+  background-color: #444;
+  color: #eee;
+  border: none;
+  padding: 0.4em 1em;
+  margin-left: 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.remove-button:hover,
+.remove-button:focus {
+  background-color: #c0392b;
+  outline: none;
+}
+
+.movie-item.latest {
+  background-color: #3b3b6d;
+  color: #d0d0ff;
+  font-weight: 600;
+  box-shadow: 0 0 8px #646cffaa;
+}
+
+.movie-item.latest .remove-button {
+  background-color: #5050a0;
+}
+
+.movie-item.latest .remove-button:hover,
+.movie-item.latest .remove-button:focus {
+  background-color: #7a7ae0;
+}
