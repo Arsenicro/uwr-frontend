@@ -1,0 +1,53 @@
+@use "../../scss/variables" as variables;
+@use "sass:color";
+
+@mixin boxMixin($size: 100px, $color: variables.$color) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+}
+
+$sizes: (
+  small: 100px,
+  medium: 200px,
+  large: 300px,
+);
+
+@each $size, $value in $sizes {
+  .box-#{$size} {
+    width: $value;
+    height: $value;
+    background-color: variables.$secondary-color;
+  }
+}
+
+.box {
+  @include boxMixin(300px);
+
+  &:hover {
+    background-color: color.adjust(variables.$color, $lightness: -30%);
+  }
+
+  .box2 {
+    background-color: red;
+  }
+}
+
+.box2 .hello {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.image {
+  background-image: url(image@1x.png);
+}
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}

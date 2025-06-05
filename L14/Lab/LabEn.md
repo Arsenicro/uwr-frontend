@@ -15,7 +15,7 @@ Your project doesn't have to be perfect (this isn't a design course) and may rep
 ## Requirements
 
 1. The project must be created using [Vite](https://vite.dev/)
-1. The site must use **React** or **Svelte**
+1. The site must use **Plain HTML/JS**, **React** or **Svelte**
 1. The site must use **CSS Modules**, **SCSS Modules**, **Emotion**, **Tailwind** or **daisyUI**
 1. The project must be organized into components in a way that supports maintainability
 1. The page must contain (at least) the following three sections:

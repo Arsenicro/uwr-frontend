@@ -15,7 +15,7 @@ Projekt nie musi być perfekcyjny (to nie jest kurs projektowania graficznego) i
 ## Wymagania
 
 1. Projekt musi być stworzony za pomocą [Vite](https://vite.dev/)
-1. Strona musi korzystać z **Reacta** lub **Svelte**
+1. Strona musi korzystać z **czystego HTML/JS**, **Reacta** lub **Svelte**
 1. Strona musi używać jednego z następujących rozwiązań do stylowania: **CSS Modules**, **SCSS Modules**, **Emotion**, **Tailwind** lub **daisyUI**
 1. Projekt musi być podzielony na komponenty w sposób wspierający późniejsze utrzymanie
 1. Strona musi zawierać **co najmniej trzy sekcje**:

@@ -3,13 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "browserslist": [
+    ">0.2%"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "daisyui": "^5.0.43",
+    "sass": "^1.89.1",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.13.5",
+    "@tailwindcss/vite": "^4.1.8",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.8"
   }
 }
